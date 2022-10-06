@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<!-- 
+  - This file is included by the struts.xml file as an example
+  - of how to break up the configuration file into multiple files.
+-->
+<struts>
+    <package name="home" namespace="/home" extends="struts-default">
+
+        <default-action-ref name="Home" />
+
+        <action name="Home" class="com.balay4rent.main.actions.Pages">
+            <result>/WEB-INF/views/home.jsp</result>
+        </action>
+
+        <action name="*" class="com.balay4rent.main.MainActionSupport">
+            <result>/WEB-INF/views/{1}.jsp</result>
+        </action>
+
+        <!-- Add additional "example" package actions here. -->
+
+    </package>
+</struts>

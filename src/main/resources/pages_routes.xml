@@ -12,7 +12,7 @@
         <default-action-ref name="Home" />
 
         <action name="Home" class="com.balay4rent.main.actions.Pages">
-            <result>/WEB-INF/views/home.jsp</result>
+            <result>/WEB-INF/views/pages/home.jsp</result>
         </action>
 
         <action name="*" class="com.balay4rent.main.MainActionSupport">

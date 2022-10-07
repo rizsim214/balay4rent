@@ -10,8 +10,16 @@ body{
     background-image: linear-gradient(90deg, #fff, #30D2F5);
 }
 /* Home page background */
-main{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(../images/cebu.jpg);
+#home{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url(../images/houses1.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+#rentables{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url(../images/house2.jpg);
     background-repeat: no-repeat;
     height: 100vh;
     background-position: center;
@@ -19,6 +27,18 @@ main{
     background-blend-mode: darken;
 }
 
+.search-box{
+    max-width: 588px;
+    width: 100%;
+    height: 44px;
+    border-radius: 50px;
+    font-size: 24px;
+}
+
+/* Navbar  */
+#navbar{
+    background-color: rgba(0, 0, 0, 0.250);
+}
 /* Button Styles */
 .signup, .browse{
     border: none;
@@ -27,7 +47,7 @@ main{
 }
 
 .signup:hover, .browse:hover{
-    background-color: #6bd5f5;
+    background-color: #3bd0fee3;
 }
 
 /* Landing Page Slogan Message */
@@ -41,5 +61,13 @@ main{
 /* Slogan Message Hover */
 .highlight:hover{
     text-decoration: underline;
+}
+
+.find-btn{
+    transition: 0.3s ease-in;
+    background-color: rgba(255, 255, 255, 0.738);
+}
+.find-btn:hover {
+    background-color: rgb(255, 255, 255);
 }
 

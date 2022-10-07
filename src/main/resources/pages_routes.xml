@@ -14,7 +14,26 @@
         <action name="Home" class="com.balay4rent.main.actions.Pages">
             <result>/WEB-INF/views/pages/home.jsp</result>
         </action>
+        
+        <action name="About" class="com.balay4rent.main.actions.Pages" method="aboutPage">
+            <result>/WEB-INF/views/pages/about.jsp</result>
+        </action>
 
+        <action name="Rentables" class="com.balay4rent.main.actions.Pages" method="rentablesPage">
+            <result>/WEB-INF/views/pages/rentables.jsp</result>
+        </action>
+
+        <action name="Support" class="com.balay4rent.main.actions.Pages" method="supportPage">
+            <result>/WEB-INF/views/pages/support.jsp</result>
+        </action>
+
+         <action name="SignIn" class="com.balay4rent.main.actions.Pages" method="signInPage">
+            <result>/WEB-INF/views/pages/login.jsp</result>
+        </action>
+
+        <action name="SignUp" class="com.balay4rent.main.actions.Pages" method="signUpPage">
+            <result>/WEB-INF/views/pages/register.jsp</result>
+        </action>
         <action name="*" class="com.balay4rent.main.MainActionSupport">
             <result>/WEB-INF/views/{1}.jsp</result>
         </action>

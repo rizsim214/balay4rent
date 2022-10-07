@@ -3,6 +3,6 @@
 <s:include value="/WEB-INF/views/includes/_header.jsp"/>
 <s:include value="/WEB-INF/views/includes/components/_nav.jsp"/>
 <main id="about">
-    <h1>HELLO FROM ABOUT</h1>
+    <h1>HELLO FROM LOGIN</h1>
 </main>
 <s:include value="/WEB-INF/views/includes/_footer.jsp"/>

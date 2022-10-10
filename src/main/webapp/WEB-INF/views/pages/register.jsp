@@ -8,29 +8,29 @@
             <p class="h4 fw-bold">Sign Up Now!</p>
             <small>We'll never share your information to anyone...</small>
         </div>
-        <s:form action="#" theme="simple" method="POST">
+        <s:form action="profile" namespace="/users" theme="simple" method="POST">
             <div class="form-group mt-2">
                 <label for="firstName" class="mb-1 fw-light">First Name</label>
-                <s:textfield name="firstName" cssClass="form-control mt-1 px-4 py-2" placeholder="ex. John" />
+                <s:textfield name="userBean.firstName" cssClass="form-control mt-1 px-4 py-2" placeholder="ex. John" />
             </div>
             <div class="form-group mt-2" >
                 <label for="lastName" class="mb-1 fw-light">Last Name</label>
-                <s:textfield name="lastName" cssClass="form-control mt-1 px-4 py-2" placeholder="ex. Doe" />
+                <s:textfield name="userBean.lastName" cssClass="form-control mt-1 px-4 py-2" placeholder="ex. Doe" />
             </div>
             <div class="form-group mt-2" >
-                <label for="lastName" class="mb-1 fw-light">Email Address</label>
-                <s:textfield type="email" name="email" cssClass="form-control mt-1 px-4 py-2" placeholder="ex. email@example.com" />
+                <label for="email" class="mb-1 fw-light">Email Address</label>
+                <s:textfield type="email" name="userBean.email" cssClass="form-control mt-1 px-4 py-2" placeholder="ex. email@example.com" />
             </div>
             <div class="form-group mt-2" >
-                <label for="lastName" class="mb-1 fw-light">Mobile Number</label>
-                <s:textfield name="contactInfo" cssClass="form-control mt-1 px-4 py-2" placeholder="ex. 09123123123" />
+                <label for="contactInfo" class="mb-1 fw-light">Mobile Number</label>
+                <s:textfield name="userBean.contactInfo" cssClass="form-control mt-1 px-4 py-2" placeholder="ex. 09123123123" />
             </div>
             <div class="form-group mt-2" >
-                <label for="lastName" class="mb-1 fw-light">Password</label>
-                <s:password name="password" cssClass="form-control mt-1 px-4 py-2" placeholder="Must be 8 to 20 characters long" />
+                <label for="password" class="mb-1 fw-light">Password</label>
+                <s:password name="userBean.password" cssClass="form-control mt-1 px-4 py-2" placeholder="Must be 8 to 20 characters long" />
             </div>
             <div class="form-group mt-2" >
-                <label for="lastName" class="mb-1 fw-light">Confirm Password</label>
+                <label for="passwordConfirm" class="mb-1 fw-light">Confirm Password</label>
                 <s:password name="passwordConfirm" cssClass="form-control mt-1 px-4 py-2" placeholder="Enter the password again" />
             </div>
             <s:submit value="Register" class="btn btn-orange text-light mt-3 w-100"/>

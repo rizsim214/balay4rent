@@ -83,17 +83,17 @@ body{
 }
 
 .header {
-    border-bottom: 2px solid #66d6efcd;
+    border-bottom: 2px solid #ffac12ea;
     color: rgba(25, 129, 164, 0.934);
 }
 .header p {
     letter-spacing: 1px;
 }
-.register .form-control {
+.register .form-control, #rentables .form-control {
     color: rgba(25, 129, 164, 0.934);
 }
 
-.register .form-control::placeholder {
+.register .form-control::placeholder, #rentables .form-control::placeholder {
     color: rgba(25, 129, 164, 0.792);
     font-weight: 400;
 }

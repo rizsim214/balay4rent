@@ -23,7 +23,7 @@
             <div class="navbar-nav">
                 <s:url var="signIn" action="SignIn" />
                 <s:url var="signUp" action="SignUp" />
-                <s:a href="%{signIn}" cssClass="nav-link mx-2 fw-bold">Sign Up</s:a>
+                <s:a href="%{signIn}" cssClass="nav-link mx-2 fw-bold">Sign In</s:a>
                 <s:a href="%{signUp}" cssClass="btn signup px-4 shadow-md text-light">Sign Up Now!</s:a>
             </div>    
         </div>

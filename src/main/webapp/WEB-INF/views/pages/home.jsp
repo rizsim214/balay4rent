@@ -1,8 +1,8 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <s:include value="/WEB-INF/views/includes/_header.jsp"/>
-<s:include value="/WEB-INF/views/includes/components/_nav.jsp"/>
 <main id="home">
+    <s:include value="/WEB-INF/views/includes/components/_nav.jsp"/>
    <div class="d-flex text-light">
         <div class="col-md-8 col-xs-12 pt-5 mt-4">
             <div class="col-md-7 col-xs-12 mx-auto px-3 slogan">

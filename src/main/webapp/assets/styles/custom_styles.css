@@ -7,7 +7,7 @@
 
 /* other page backgrounds */
 body{
-    background-image: linear-gradient(90deg, #fff, #30D2F5);
+    background-image: linear-gradient(90deg, #fff, #59d9f6e1);
 }
 /* Home page background */
 #home{
@@ -43,11 +43,12 @@ body{
 .signup, .browse{
     border: none;
     border-radius: 50px;
-    background-color: #2aa9d0;
+    background-color:#ffa909 ;
+    transition: 0.3s ease-in-out;
 }
 
 .signup:hover, .browse:hover{
-    background-color: #3bd0fee3;
+    background-color: #ffa600a2;
 }
 
 /* Landing Page Slogan Message */
@@ -70,4 +71,39 @@ body{
 .find-btn:hover {
     background-color: rgb(255, 255, 255);
 }
+
+/* Registration Form Styles */
+.register {
+    background: rgba(4, 105, 139, 0.96);
+    border-radius: 10px;
+}
+
+.register label{
+    color: #201e1ed9;
+}
+
+.header {
+    border-bottom: 2px solid #66d6efcd;
+    color: rgba(25, 129, 164, 0.934);
+}
+.header p {
+    letter-spacing: 1px;
+}
+.register .form-control {
+    color: rgba(25, 129, 164, 0.934);
+}
+
+.register .form-control::placeholder {
+    color: rgba(25, 129, 164, 0.792);
+    font-weight: 400;
+}
+
+.btn-orange {
+    background-color: #ffac12ea;
+}
+.btn-orange:hover {
+    background-color: #ffac12b1;
+}
+
+
 

@@ -9,7 +9,9 @@
 <struts>
     <package name="users" namespace="/users" extends="struts-default">
         <action name="profile" class="com.balay4rent.main.actions.users.UserRegistration" method="execute">
-            <result>/WEB-INF/views/users/profile.jsp</result>
+            <result name="success">/WEB-INF/views/pages/login.jsp</result>
+            <result name="login">/WEB-INF/views/pages/register.jsp</result>
+            <result name="error">/WEB-INF/views/pages/register.jsp</result>
         </action>
 
         <!-- Add additional "example" package actions here. -->

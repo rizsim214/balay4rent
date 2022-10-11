@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class User {
     Integer userID;
-    String firstName, lastName, email, contactInfo, password;
+    String firstName, lastName, email, contactInfo, password, userRole;
     Date createdAt = new Date(), updatedAt;
-
+    
     public Integer getUserID() {
         return userID;
     }
@@ -43,8 +43,17 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+    public String getUserRole() {
+        return userRole;
+    }
+    public void setUserRole(String userRole) {
+        this.userRole = userRole;
+    }
     public Date getCreatedAt() {
         return createdAt;
+    }
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
     }
     public Date getUpdatedAt() {
         return updatedAt;
@@ -52,14 +61,12 @@ public class User {
     public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
     }
-    
     @Override
     public String toString() {
         return "User [userID=" + userID + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
-                + ", contactInfo=" + contactInfo + ", password=" + password + ", createdAt=" + createdAt
-                + ", updatedAt=" + updatedAt + "]";
+                + ", contactInfo=" + contactInfo + ", password=" + password + ", userRole=" + userRole + ", createdAt="
+                + createdAt + ", updatedAt=" + updatedAt + "]";
     }
 
-    
     
 }

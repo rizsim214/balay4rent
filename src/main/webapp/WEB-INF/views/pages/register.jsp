@@ -8,6 +8,11 @@
             <p class="h4 fw-bold">Sign Up Now!</p>
             <small>We'll never share your information to anyone...</small>
         </div>
+        <s:if test="%{Message != null}">
+            <div class="alert alert-warning py-2 px-4" role="alert">
+                <p class="h6 fw-light"><s:property value="Message"/></p>
+            </div>
+        </s:if>
         <s:form action="profile" namespace="/users" theme="simple" method="POST">
             <div class="form-group mt-2">
                 <label for="firstName" class="mb-1 fw-light">First Name</label>
@@ -33,6 +38,11 @@
                 <label for="passwordConfirm" class="mb-1 fw-light">Confirm Password</label>
                 <s:password name="passwordConfirm" cssClass="form-control mt-1 px-4 py-2" placeholder="Enter the password again" />
             </div>
+            <div class="form-group mt-2 text-center" >
+                <p class="h6 fw-light">Register as: </p>
+                <s:radio name="userBean.userRole" list="#{'owner':'Owner','tenant':'Tenant'}"/>
+            </div>
+          
             <s:submit value="Register" class="btn btn-orange text-light mt-3 w-100"/>
         </s:form>
     </section>
